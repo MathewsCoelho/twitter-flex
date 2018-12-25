@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+ul{
+	list-style: none;
+}
+
 body{
 	background-color: #10171e;
 	font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -29,6 +33,7 @@ body{
 }
 
 .icon-box{
+	margin-right: 8px;
 	width: 23px;
 	height: 23px;
 	display: flex;
@@ -139,7 +144,7 @@ header nav ul li a:hover{
 
 .banner{
 	width: 100%;
-	height: 380px;
+	height: 320px;
 	background-color: #BF1E4A;
 	display: flex;
 	align-items: center;
@@ -240,26 +245,30 @@ header nav ul li a:hover{
 	justify-content: space-between;
 }
 
-.wrapper-content figure{
-	width: 200px;
-	height: 200px
-}
-
 .wrapper-content .img{
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	border: 3px solid #15202b; 
+	border: 5px solid #15202b; 
+	margin-top: -130px;
 }
 
 .wrapper-content .img:hover{
 	border: 1px solid #BF1E4A;
 }
 
+.profile{
+	width: 260px;
+}
+
 .profile .username{
+	margin-top: 10px;
 	color: white;
 	font-size: 1.31em;
 	font-weight: bold;
+}
+.profile .username:hover{
+	color: #BF1E4A;
 }
 
 .profile .user{
@@ -272,6 +281,12 @@ header nav ul li a:hover{
 	color: #BF1E4A;
 }
 
+.profile .desc-user{
+	font-size: 0.875em;
+	color: white;
+	margin-top: 15px;
+}
+
 .profile .profile-infos{
 	font-size: 0.875em;
 	display: flex;
@@ -280,23 +295,191 @@ header nav ul li a:hover{
 	margin: 6px 0;
 }
 
+.profile .user-followers{
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+}
+
+.profile .user-followers img{
+	width:45px;
+	border-radius: 50%;
+	height:45px;
+	margin: 0 5px 10px 0;
+}
+
 .profile .profile-infos .far, 
 .profile .profile-infos .fas{
-	margin-right: 8px;
 	font-size: 18px;
 }
 
 .profile .user-images{
 	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
 }
 
 .profile .user-images img{
-	margin: 4px;
-	width: 83px;
-	height: 83px;
+	margin: 0 5px 5px 0;
+	width: 80px;
+	height: 80px;
 	border-radius: 5px;
 }
 
+.timeline{
+	width: 500px;
+	background-color: #15202b;
+	margin-top: 10px;
+}
+
+.timeline ul{
+	display: flex;
+	color: white;
+	border: 1px solid #38444d;
+}
+
+.timeline ul li{
+	margin-left: 30px;
+	padding: 15px 0;
+	font-size: 1.12em;
+	font-weight: 700;
+}
+
+.timeline ul li:hover{
+	color: #BF1E4A;
+}
+
+.timeline ul li:first-child{
+	margin-left: 15px;
+}
+
+.timeline .tweets-content{
+	display: flex;
+	flex-direction: column;
+}
+
+.timeline .tweet{
+	display: flex;
+	padding: 10px;
+	border: 1px solid #38444d;
+	border-top: none;
+}
+
+.timeline .tweet img{
+	margin-left: 10px;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+}
+
+.timeline .tweet strong{
+	font-size: 0.875em;
+	color: white;
+}
+
+.timeline .tweet span{
+	color: #8899a6;
+	font-size: 0.875em;
+}
+
+.timeline .tweet-content{
+	margin-left: 10px;
+}
+
+.timeline .tweet .tweet-desc{
+	color: white;
+	font-size: 0.875em;
+	margin-top: 8px;
+}
+
+.timeline .tweet .icons{
+	margin-top: 16px;
+	color: #8899a6;
+	font-size: 16px;
+}
+
+.timeline .tweet .icons i{
+	margin-right: 40px;	
+}
+
+.fa-comment:hover{
+	color: #3498db;
+}
+
+.fa-retweet:hover{
+	color: #2ecc71;
+}
+
+.fa-heart:hover{
+	color: #BF1E4A;
+}
+
+.fa-chart-bar:hover{
+	color: #8e44ad;
+}
+
+.widgets .widget{
+	padding: 10px;
+	background-color: #15202b;
+	border: 1px solid #38444d;
+	margin-top: 10px;
+}
+
+.widgets .follow .follow-header{
+	display: flex;
+	align-items: center;
+}
+
+.widgets .follow .follow-header p{
+	color: white;
+	font-size: 1.12em;
+	font-weight: 700;
+}
+
+.widgets .follow .follow-header span{
+	font-size: 0.75em;
+}
+
+.widgets .follow .suggestion{
+	display: flex;
+	margin-top: 10px;
+	border-bottom: 1px solid #38444d;
+	padding-bottom: 5px;
+}
+
+.widgets .follow .suggestion img{
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.widgets .follow .suggestion .username{
+	color: white;
+	font-size: 0.875em;
+}
+
+.widgets .follow .suggestion span{
+	font-size: 0.875em;
+	color: #8899a6;
+}
+
+.widgets .follow .find-peoples{
+	margin-top: 8px;
+	display: flex;
+	align-items: center;
+	font-size: 0.75em;
+}
+
+.follow-button{
+	margin-top: 4px;
+	color: #BF1E4A;
+	border: 1px solid #bf1e4a;
+	background: transparent;
+	padding: 7px 24px;
+	font-weight: 700;
+	border-radius: 20px;
+}
 
 .red{
 	color: #BF1E4A;
