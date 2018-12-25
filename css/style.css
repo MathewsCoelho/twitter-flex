@@ -28,6 +28,14 @@ body{
 	border: 2px solid #BF1E4A;
 }
 
+.icon-box{
+	width: 23px;
+	height: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .button{
 	background-color: #BF1E4A;
 	border: none;
@@ -35,7 +43,7 @@ body{
 	color: white;
 	font-size: 0.875em;
 	font-weight: 700;
-	padding: 9px 18px;
+	padding: 8px 18px;
 	cursor: pointer;
 }
 
@@ -64,6 +72,8 @@ header .content{
 header ul{
 	display: flex;
 	list-style:none;
+	align-items: center;
+	justify-content: center;
 }
 
 header nav ul li{
@@ -135,4 +145,159 @@ header nav ul li a:hover{
 	align-items: center;
 	justify-content: center;
 	color: white;
+}
+
+.infos{
+	width: 100%;
+	height: 60px;
+	background-color: #15202b;
+	box-shadow: 0 1px 3px rgba(0,0,0, 0.25);
+}
+
+.infos-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	height: 100%;
+	padding-left: 285px;
+}
+
+.infos-content .profile-infos{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.profile-content{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 0 15px;
+	position: relative;
+	height: 100%;
+}
+
+.active::after{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #BF1E4A;
+	content: '';
+}
+
+.profile-content p{
+	color: #8899a6;
+	font-weight: 600;
+	font-size: 0.75em;
+}
+
+.profile-content span{
+	color: #8899a6;
+	font-weight: 700;
+	font-size: 1.12em;
+}
+
+.active span{
+	color: #BF1E4A;
+}
+
+.edit-button{
+	background: transparent;
+	outline: none;
+	font-weight: 700;
+	border: 1px solid #8899a6;
+	border-radius: 20px;
+	color: #8899a6;
+	padding: 8px 16px;
+	font-size: 0.875em;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.actions{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.edit-button:hover{
+	background-color: #182430;
+}
+
+.fa-ellipsis-v{
+	margin-left: 20px;
+	color: #8899a6;
+	font-size: 16px;
+}
+
+.wrapper-content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper-content figure{
+	width: 200px;
+	height: 200px
+}
+
+.wrapper-content .img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 3px solid #15202b; 
+}
+
+.wrapper-content .img:hover{
+	border: 1px solid #BF1E4A;
+}
+
+.profile .username{
+	color: white;
+	font-size: 1.31em;
+	font-weight: bold;
+}
+
+.profile .user{
+	font-size: 0.75em;
+	color: #8899a6;
+	margin-bottom: 10px;
+}
+
+.profile .user:hover{
+	color: #BF1E4A;
+}
+
+.profile .profile-infos{
+	font-size: 0.875em;
+	display: flex;
+	align-items: center;
+	color: #8899a6;
+	margin: 6px 0;
+}
+
+.profile .profile-infos .far, 
+.profile .profile-infos .fas{
+	margin-right: 8px;
+	font-size: 18px;
+}
+
+.profile .user-images{
+	display: flex;
+}
+
+.profile .user-images img{
+	margin: 4px;
+	width: 83px;
+	height: 83px;
+	border-radius: 5px;
+}
+
+
+.red{
+	color: #BF1E4A;
 }
