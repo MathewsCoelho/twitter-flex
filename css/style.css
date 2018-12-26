@@ -251,6 +251,7 @@ header nav ul li a:hover{
 	border-radius: 50%;
 	border: 5px solid #15202b; 
 	margin-top: -130px;
+	transition: .3s all;
 }
 
 .wrapper-content .img:hover{
@@ -329,17 +330,18 @@ header nav ul li a:hover{
 .timeline{
 	width: 500px;
 	background-color: #15202b;
-	margin-top: 10px;
+	margin: 10px 10px 20px;
 }
 
 .timeline ul{
 	display: flex;
 	color: white;
+	align-items: center;
 	border: 1px solid #38444d;
 }
 
 .timeline ul li{
-	margin-left: 30px;
+	margin-left: 20px;
 	padding: 15px 0;
 	font-size: 1.12em;
 	font-weight: 700;
@@ -418,8 +420,12 @@ header nav ul li a:hover{
 	color: #8e44ad;
 }
 
+.widgets{
+	width: 290px;
+}
+
 .widgets .widget{
-	padding: 10px;
+	padding: 15px;
 	background-color: #15202b;
 	border: 1px solid #38444d;
 	margin-top: 10px;
@@ -427,24 +433,38 @@ header nav ul li a:hover{
 
 .widgets .follow .follow-header{
 	display: flex;
-	align-items: center;
+	align-items: baseline;
 }
 
-.widgets .follow .follow-header p{
+.widgets .follow .follow-header strong{
 	color: white;
 	font-size: 1.12em;
-	font-weight: 700;
 }
 
 .widgets .follow .follow-header span{
 	font-size: 0.75em;
+	position: relative;
+	padding-left: 10px;
+}
+
+.widgets .follow .follow-header span:before{
+	position: absolute;
+	content: '';
+	width: 2px;
+	height: 2px;
+	background-color:  #BF1E4A;
+	border-radius: 50%;
+	margin-left: 5px;
+	margin-right: 5px;
+	left: 0;
+	top: 6px;
 }
 
 .widgets .follow .suggestion{
 	display: flex;
 	margin-top: 10px;
 	border-bottom: 1px solid #38444d;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 }
 
 .widgets .follow .suggestion img{
@@ -480,6 +500,36 @@ header nav ul li a:hover{
 	font-weight: 700;
 	border-radius: 20px;
 }
+
+.widgets .trends .trends-header strong{
+	color: white;
+	font-size: 1.12em;
+}
+
+.widgets .trends .trends-header span{
+	font-size: 0.75em;
+	position: relative;
+	padding-left: 10px;
+}
+
+.widgets .trends .trends-header span:before{
+	position: absolute;
+	content: '';
+	width: 2px;
+	height: 2px;
+	background-color:  #BF1E4A;
+	border-radius: 50%;
+	margin-left: 5px;
+	margin-right: 5px;
+	left: 0;
+	top: 6px;
+}
+
+.widgets .trends li{
+	margin: 10px 0;
+	font-weight: 700;
+}
+
 
 .red{
 	color: #BF1E4A;
